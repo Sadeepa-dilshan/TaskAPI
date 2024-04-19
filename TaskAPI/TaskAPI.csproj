@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskApi.DataAccess\TaskAPI.DataAccess.csproj" />
+    <ProjectReference Include="..\TaskAPI.Models\TaskAPI.Models.csproj" />
+    <ProjectReference Include="..\TaskAPI.Services\TaskAPI.Services.csproj" />
+  </ItemGroup>
+
+</Project>
