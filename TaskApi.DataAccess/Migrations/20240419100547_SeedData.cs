@@ -17,7 +17,6 @@ namespace TaskAPI.DataAccess.Migrations
                 columns: new[] { "Title", "Description", "Created", "Due", "Status" },
                 values: new object[] { "Test", "Test - db", DateTime.Now, DateTime.Now.AddDays(5), 2 });
         }
-
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
