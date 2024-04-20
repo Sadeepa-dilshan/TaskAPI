@@ -8,7 +8,7 @@ using TaskApi.DataAccess;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace TaskAPI.Services
+namespace TaskAPI.Services.Todos
 {
     public class TodoSqlServerServices : ITodoRepository
     {

@@ -1,4 +1,5 @@
-using TaskAPI.Services;
+using TaskAPI.Services.Authors;
+using TaskAPI.Services.Todos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ITodoRepository, TodoSqlServerServices>(); // new obj is created per req
+builder.Services.AddScoped<IAuthorRepository, AuthorSqlServerService>();
 //addSingleton,addTransient
 
 var app = builder.Build();
