@@ -4,7 +4,7 @@ namespace TaskAPI.Services.Todos
 {
     public class TodoServices : ITodoRepository
     {
-        public List<Todo> AllTodos()
+        public List<Todo> AllTodos(int authorId)
         {
             var todos = new List<Todo>();
             var todo1 = new Todo
@@ -42,6 +42,11 @@ namespace TaskAPI.Services.Todos
 
             return todos;
 
+        }
+
+        public Todo GetTodo(int authorId,int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
